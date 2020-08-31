@@ -6,7 +6,8 @@ import md5 from 'crypto-js/md5'
 
 const options = {
   credentials: 'include',
-  method: 'GET'
+  method: 'GET',
+  mode: 'no-cors'
 }
 
 class Home extends Downloader {
@@ -22,7 +23,8 @@ class Home extends Downloader {
       url: '/api/list?',
       options: {
         credentials: 'include',
-        method: 'GET'
+        method: 'GET',
+        mode: 'no-cors'
       }
     }
     super(listParameter)
